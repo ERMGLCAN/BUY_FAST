@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Buy Fast</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="favicon-96x96.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap css -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="SimpleStarRating.css">
+    <script src="function_soledad.js"></script>
+    <style type="text/css">
+        /* ===========================
+--- Intro
+============================ */
+        
+        .intro {
+            width: 100%;
+            position: relative;
+            background: url(img/bg1.jpg) no-repeat top center;
+            background-size: cover;
+        }
+        
+        #intro.intro {
+            padding: 200px 0 150px 0;
+        }
+        
+        .intro .slogan {
+            text-align: center;
+        }
+        
+        .intro .page-scroll {
+            text-align: center;
+        }
+        
+        .intro .page-scroll a {
+            color: #fff;
+        }
+        
+        .brand-heading {
+            font-size: 40px;
+        }
+        
+        .intro-text {
+            font-size: 18px;
+        }
+        
+        .intro .slogan h2 {
+            color: #FFF;
+            text-shadow: none;
+            font-size: 60px;
+            line-height: 60px;
+            font-weight: 700;
+            font-family: Montserrat, sans-serif;
+            background-color: rgba(0, 0, 0, 0);
+            text-decoration: none;
+            text-transform: uppercase;
+            border-width: 0px;
+            border-color: #000;
+            border-style: none;
+            text-shadow: -1px 0 1px #000;
+        }
+        
+        .intro .slogan h4 {
+            color: #fff;
+            text-shadow: -1px 1px 1px #000;
+        }
+        
+        main {
+            background-color: white;
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px;
+            text-align: center;
+        }
+        
+        table {
+            display: inline-block;
+        }
+        
+        td {
+            padding: 1em;
+        }
+        
+        .golden {
+            color: #ee0;
+            background-color: #444;
+        }
+        
+        .big-red {
+            color: #f11;
+            font-size: 50px;
+        }
+        /**
+ * Oscuro: #283035
+ * Azul: #03658c
+ * Detalle: #c7cacb
+ * Fondo: #dee1e3
+ ----------------------------------*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        a {
+            color: #03658c;
+            text-decoration: none;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        body {
+            font-family: 'Roboto', Arial, Helvetica, Sans-serif, Verdana;
+            background: white;
+        }
+        /** ====================
+ * Lista de Comentarios
+ =======================*/
+        
+        .comments-container {
+            margin: 60px auto 15px;
+            width: 768px;
+        }
+        
+        .comments-container h1 {
+            font-size: 36px;
+            color: #283035;
+            font-weight: 400;
+        }
+        
+        .comments-container h1 a {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .comments-list {
+            margin-top: 30px;
+            position: relative;
+        }
+        /**
+ * Lineas / Detalles
+ -----------------------*/
+        
+        .comments-list:before {
+            content: '';
+            width: 2px;
+            height: 100%;
+            background: #c7cacb;
+            position: absolute;
+            left: 32px;
+            top: 0;
+        }
+        
+        .comments-list:after {
+            content: '';
+            position: absolute;
+            background: #c7cacb;
+            bottom: 0;
+            left: 27px;
+            width: 7px;
+            height: 7px;
+            border: 3px solid #dee1e3;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        
+        .reply-list:before,
+        .reply-list:after {
+            display: none;
+        }
+        
+        .reply-list li:before {
+            content: '';
+            width: 60px;
+            height: 2px;
+            background: #c7cacb;
+            position: absolute;
+            top: 25px;
+            left: -55px;
+        }
+        
+        .comments-list li {
+            margin-bottom: 15px;
+            display: block;
+            position: relative;
+        }
+        
+        .comments-list li:after {
+            content: '';
+            display: block;
+            clear: both;
+            height: 0;
+            width: 0;
+        }
+        
+        .reply-list {
+            padding-left: 88px;
+            clear: both;
+            margin-top: 15px;
+        }
+        /**
+ * Avatar
+ ---------------------------*/
+        
+        .comments-list .comment-avatar {
+            width: 65px;
+            height: 65px;
+            position: relative;
+            z-index: 99;
+            float: left;
+            border: 3px solid #FFF;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        .comments-list .comment-avatar img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .reply-list .comment-avatar {
+            width: 50px;
+            height: 50px;
+        }
+        
+        .comment-main-level:after {
+            content: '';
+            width: 0;
+            height: 0;
+            display: block;
+            clear: both;
+        }
+        /**
+ * Caja del Comentario
+ ---------------------------*/
+        
+        .comments-list .comment-box {
+            width: 680px;
+            float: right;
+            position: relative;
+            -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+            -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+        }
+        
+        .comments-list .comment-box:before,
+        .comments-list .comment-box:after {
+            content: '';
+            height: 0;
+            width: 0;
+            position: absolute;
+            display: block;
+            border-width: 10px 12px 10px 0;
+            border-style: solid;
+            border-color: transparent #FCFCFC;
+            top: 8px;
+            left: -11px;
+        }
+        
+        .comments-list .comment-box:before {
+            border-width: 11px 13px 11px 0;
+            border-color: transparent rgba(0, 0, 0, 0.05);
+            left: -12px;
+        }
+        
+        .reply-list .comment-box {
+            width: 610px;
+        }
+        
+        .comment-box .comment-head {
+            background: #FCFCFC;
+            padding: 10px 12px;
+            border-bottom: 1px solid #E5E5E5;
+            overflow: hidden;
+            -webkit-border-radius: 4px 4px 0 0;
+            -moz-border-radius: 4px 4px 0 0;
+            border-radius: 4px 4px 0 0;
+        }
+        
+        .comment-box .comment-head i {
+            float: right;
+            margin-left: 14px;
+            position: relative;
+            top: 2px;
+            color: #A6A6A6;
+            cursor: pointer;
+            -webkit-transition: color 0.3s ease;
+            -o-transition: color 0.3s ease;
+            transition: color 0.3s ease;
+        }
+        
+        .comment-box .comment-head i:hover {
+            color: #03658c;
+        }
+        
+        .comment-box .comment-name {
+            color: #283035;
+            font-size: 14px;
+            font-weight: 700;
+            float: left;
+            margin-right: 10px;
+        }
+        
+        .comment-box .comment-name a {
+            color: #283035;
+        }
+        
+        .comment-box .comment-head span {
+            float: left;
+            color: #999;
+            font-size: 13px;
+            position: relative;
+            top: 1px;
+        }
+        
+        .comment-box .comment-content {
+            background: #FFF;
+            padding: 12px;
+            font-size: 15px;
+            color: #595959;
+            -webkit-border-radius: 0 0 4px 4px;
+            -moz-border-radius: 0 0 4px 4px;
+            border-radius: 0 0 4px 4px;
+        }
+        
+        .comment-box .comment-name.by-author,
+        .comment-box .comment-name.by-author a {
+            color: #03658c;
+        }
+        
+        .comment-box .comment-name.by-author:after {
+            content: 'autor';
+            background: #03658c;
+            color: #FFF;
+            font-size: 12px;
+            padding: 3px 5px;
+            font-weight: 700;
+            margin-left: 10px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+        /** =====================
+ * Responsive
+ ========================*/
+        
+        @media only screen and (max-width: 766px) {
+            .comments-container {
+                width: 480px;
+            }
+            .comments-list .comment-box {
+                width: 390px;
+            }
+            .reply-list .comment-box {
+                width: 320px;
+            }
+        }
+        
+        .modal-dialog {
+            max-width: 800px;
+            margin: 30px auto;
+        }
+        
+        .modal-body {
+            position: relative;
+            padding: 0px;
+        }
+        
+        .close {
+            position: absolute;
+            right: -30px;
+            top: 0;
+            z-index: 999;
+            font-size: 2rem;
+            font-weight: normal;
+            color: #fff;
+            opacity: 1;
+        }
+    </style>
+    <!-- =======================================================
+    Theme Name: eStartup
+    Theme URL: https://bootstrapmade.com/estartup-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+    <header id="header" class="header header-hide">
+        <div class="container">
+
+            <div id="logo" class="pull-left">
+                <h1><a href="#body" class="scrollto"><span>B</span>Fast</a></h1>
+
+            </div>
+
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="menu-active"><a href="#hero">Ejemplo comentarios</a></li>
+                    <li><a href="#about-us">Home</a></li>
+                    <li><a href="#features">About</a></li>
+                    <li><a href="#screenshots">Screenshots</a></li>
+                    <li><a href="#team">Video</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!-- Section: intro -->
+    <section id="intro" class="intro">
+
+        <div class="slogan">
+
+        </div>
+        <div class="page-scroll">
+            <a href="#about">
+                <i class="fa fa-angle-down fa-5x animated"></i>
+            </a>
+        </div>
+    </section>
+    <!-- /Section: intro -->
+
+
+
+
+    <!--==========================
+    Hero Section
+  ============================-->
+    <section id="hero" class="wow fadeIn">
+        <div class="hero-container">
+            <h1>Bfast Comments</h1>
+            <div id="formulario_comentarios">
+                <table>
+                    <tr>
+                        <td>Ranking</td>
+                        <td><span class="rating"></span></td>
+                    </tr>
+                </table>
+                <div><input id="in_comeentario" class="form-control" type="text" placeholder="Ingresa tu comentario..." name=""><span><button id="btn_comentar"  type="button" class="btn btn-primary">Ok</button></span></div>
+                <div id="list_comment">
+                    <div class="comments-container">
+
+                        <ul id="comments-list" class="comments-list">
+
+                            <div class="comment-main-level">
+                                <!-- Avatar -->
+                                <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_1_zps8e1c80cd.jpg" alt=""></div>
+                                <!-- Contenedor del Comentario -->
+                                <div class="comment-box">
+                                    <div class="comment-head">
+                                        <h6 class="comment-name"><a>Agustin Ortiz</a></h6>
+                                        <span>hace 20 minutos</span>
+                                        <i class="fa fa-reply"></i>
+                                        <i class="fa fa-heart"></i>
+                                    </div>
+                                    <div class="comment-content">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Respuestas de los comentarios -->
+                            <ul class="comments-list reply-list">
+                                <li>
+                                    <!-- Avatar -->
+                                    <div class="comment-avatar"><img src="http://i9.photobucket.com/albums/a88/creaticode/avatar_2_zps7de12f8b.jpg" alt=""></div>
+                                    <!-- Contenedor del Comentario -->
+                                    <div class="comment-box">
+                                        <div class="comment-head">
+                                            <h6 class="comment-name"><a>Lorena Rojero</a></h6>
+                                            <span>hace 10 minutos</span>
+                                            <i class="fa fa-reply"></i>
+                                            <i class="fa fa-heart"></i>
+                                        </div>
+                                        <div class="comment-content">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+
+                            <li>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- #hero -->
+
+
+
+
+    <!--==========================
+    About Us Section
+  ============================-->
+    <section id="about-us" class="about-us padd-section wow fadeInUp">
+        <div class="container">
+            <div class="row justify-content-center">
+
+                <div class="col-md-5 col-lg-3">
+                    <img src="img/about-img.png" alt="About">
+                </div>
+
+                <div class="col-md-7 col-lg-5">
+                    <div class="about-content">
+
+                        <h2><span>Descarga</span> Nuestra Aplicacion en tu telefono celular </h2>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo? </p>
+
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-angle-right"></i> Playeras </li>
+                            <li><i class="fa fa-angle-right"></i> Pantalones </li>
+                            <li><i class="fa fa-angle-right"></i> Calzado </li>
+                            <li><i class="fa fa-angle-right"></i> Accesorios </li>
+                            <li><i class="fa fa-angle-right"></i> Otros </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--==========================
+    Features Section
+  ============================-->
+
+    <section id="features" class="padd-section text-center wow fadeInUp">
+
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Amazing Features.</h2>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/blus.jpeg" class="img-fluid">
+                        <h4>creative design</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/chamarra.jpeg" alt="img" class="img-fluid">
+                        <h4>Retina Ready</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/conjunto.jpeg" alt="img" class="img-fluid">
+                        <h4>easy to use</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/faltda.jpeg" alt="img" class="img-fluid">
+                        <h4>Free Updates</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/moda.jpeg" alt="img" class="img-fluid">
+                        <h4>Free Updates</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/pantalon.jpeg" alt="img" class="img-fluid">
+                        <h4>App store support</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/ropa.jpeg" alt="img" class="img-fluid">
+                        <h4>Perfect Pixel</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="feature-block">
+                        <img src="img/clothes/su.jpeg" alt="img" class="img-fluid">
+                        <h4>clean codes</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--==========================
+    Screenshots Section
+  ============================-->
+    <section id="screenshots" class="padd-section text-center wow fadeInUp">
+
+        <div class="container">
+            <div class="section-title">
+                <h2>Example Prototype</h2>
+                <p class="separator">Please click in button exmaples (persona, alumno) .</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <button id="btn_persona" type="button" class="btn btn-primary">Persona</button>
+            <button id="btn_alumno" type="button" class="btn btn-info">Alumno</button>
+        </div>
+
+    </section>
+
+    <!--==========================
+    Video Section
+  ============================-->
+
+    <section id="video" class="text-center wow fadeInUp">
+        <div class="overlay">
+            <div class="container-fluid container-full">
+
+                <div class="row">
+                    <!-- <a class="btn btn-primary video-btn play-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/Jfrjeg26Cwk" data-target="#myModal"></a>-->
+
+
+                    <button type="button" class="btn btn-primary video-btn play-btn" data-toggle="modal" data-src="video.mp4" type="video/mp4" data-target="#myModal">                      
+                    </button>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--MODAL VIDEO-->
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12">
+                        <iframe class="col-lg-12 col-md-12 col-sm-12 col-xl-12 col-xs-12" src="video.mp4" id="video" type="video/mp4" allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--FIN MODAL VIDEO -->
+
+    <!--==========================
+    Team Section
+  ============================-->
+
+
+
+    <!--==========================
+    Testimonials Section
+  ============================-->
+    <div class="row">
+        <hr>
+        <hr>
+        <hr>
+        <br>
+    </div>
+    <section id="contact" class="">
+        <div class=" container">
+            <div class="">
+                <h2>Contact</h2>
+                <div><iframe style="height: 500px !important; width: 800px !important;" src="https://maps.google.com/maps?width=-99.214308&amp;height=19.684758&amp;hl=en&amp;q=Cuautitlan%20Izcalli+(BuyFast)&amp;ie=UTF8&amp;t=p&amp;z=14&amp;iwloc=B&amp;output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <div><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/it/">https://embedgooglemaps.com/it/</a> & <a href="https://newyorkhoponhopoffbus.nl">new york hop on hop off bustochten | nyc hop on hop off bus ...</a></small></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+                    </style>
+                </div><br />
+            </div>
+            <!-- ESTE CODIGO ES CON LA API KEY QUE OFERE GOOGLE A SUS DEVELOPERS COMO PRUEBA
+            <div class="prueba">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBdgw44mqu7D8IrKUB12QmXsHwD6cfUSec'></script>
+                <div style='overflow:hidden;height:527px;width:520px;'>
+                    <div id='gmap_canvas' style='height:527px;width:520px;'></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+                    </style>
+                </div> <a href='http://maps-website.com/es'>http://maps-generator.com</a>
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=ec6b5beba4c26e53cad2f9dce31ddc6fedc07dac'></script>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 12,
+                            center: new google.maps.LatLng(19.43, -99.13),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(19.43, -99.13)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>Buy Fast</strong><br>Bosques de la Hacienda, Cuautitlán Izcalli, Méx.<br> <br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+        -->
+
+        </div>
+    </section>
+
+
+    <!--==========================
+    Pricing Table Section
+  ============================-->
+
+
+    <!--==========================
+    Blog Section
+  ============================-->
+
+
+    <!--==========================
+    Newsletter Section
+  ============================-->
+
+
+    <!--==========================
+    Contact Section
+  ============================-->
+
+    <!-- #contact -->
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-lg-4">
+                    <div class="footer-logo">
+
+                        <a class="navbar-brand" href="#">Buy Fast</a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="copyrights">
+            <div class="container">
+                <p>&copy; Copyrights All rights reserved.</p>
+                <div class="credits">
+
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/modal-video/js/modal-video.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script src="SimpleStarRating.js"></script>
+
+    <script>
+        var ratings = document.getElementsByClassName('rating');
+
+        for (var i = 0; i < ratings.length; i++) {
+            var r = new SimpleStarRating(ratings[i]);
+
+            ratings[i].addEventListener('rate', function(e) {
+                console.log('Rating: ' + e.detail);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
